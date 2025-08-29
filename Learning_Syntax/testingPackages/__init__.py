@@ -7,7 +7,11 @@ means that they are relative imports, which means that they are imported from th
 from . import apples as notApples
 from . import oranges
 
-__all__= [notApples, oranges]
+__all__= ["notApples", "oranges"]
+# Basically from .import apples as notApples,  That imports the apples module
+# and gives it the local name notApples within this package.
+# So when you do from Learning_Syntax.testingPackages import notApples,
+# you are actually importing the apples module but referring to it as notApples.
 
 '''
 “Are the variables named module1 and module2?”

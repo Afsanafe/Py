@@ -35,7 +35,8 @@ from Learning_Syntax import dice
 # Importing multiple files in the same folder in one line:
 from Learning_Syntax import functions, defaultArguments, keywordArguments
 from Learning_Syntax.testingPackages import oranges
-from Learning_Syntax.testingPackages import apples 
+from Learning_Syntax.testingPackages import notApples
+from Learning_Syntax.testingPackages import apples
 from Learning_Syntax.testingPackages import pears 
 
 
@@ -73,9 +74,11 @@ if __name__ == "__main__":
     # Learning_Syntax.functions.run()
     # Learning_Syntax.defaultArguments.run()
     # Learning_Syntax.keywordArguments.run()
-    Learning_Syntax.testingPackages.oranges.run()
-    Learning_Syntax.testingPackages.apples.run()
-    Learning_Syntax.testingPackages.pears.run()
+    oranges.run()
+    apples.run()
+    notApples.run()
+    pears.run()
+
 
 
 
