@@ -3,6 +3,10 @@
 that should be imported when using the '*' operator. The dot (.) before the module names
 means that they are relative imports, which means that they are imported from the same package.'''
 
+
+from . import apples as notApples
+from . import oranges
+
 __all__= [notApples, oranges]
 
 '''
@@ -22,6 +26,3 @@ yourpackage/
   module2.py      # this is the 'module2' submodule
 
 '''
-
-from . import apples as notApples
-from . import oranges
