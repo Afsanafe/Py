@@ -1,0 +1,34 @@
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+
+# Virtual envs & local config
+.venv/
+venv/
+.env
+*.env
+
+# Test caches & coverage
+.pytest_cache/
+.coverage*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+
+# OS/editor junk
+.DS_Store
+.idea/
+.vscode/
+
+# # Your test artifacts (adjust paths)
+# tests/regression/**/output/**
+# tests/**/artifacts/**
+# # If your tests save .npy files as outputs:
+# # (Better to scope it to output dirs than blanket-ignore all .npy)
+# tests/**/output/**/*.npy
