@@ -45,6 +45,7 @@ from Learning_Syntax import list_comprehensions
 from Learning_Syntax import Match_Case_Statements
 from Learning_Syntax.Module import modules
 from Learning_Syntax.Module import modulePT2
+from Learning_Syntax import scopeResolution
 
 
 
@@ -90,6 +91,7 @@ if __name__ == "__main__":
     # MembershipOperators.run()
     # list_comprehensions.run()
     # Match_Case_Statements.run()
-    modules.run()
-    modulePT2.run()
+    # modules.run()
+    # modulePT2.run()
+    scopeResolution.run()
 
