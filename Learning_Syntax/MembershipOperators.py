@@ -1,7 +1,14 @@
 # Membership Operators = used to test whether a value or variable is found in a sequence 
 #                                           (string, list, tuple, set, or dictionary) - included but not limited to
 #                                           1. in
-#                                           2. not in
+#                                           2. not 
+# There are two membership operators in Python:
+# in → returns True if the value is found.
+# not in → returns True if the value is not found.
+#
+# 🔹 Syntax
+# element in collection
+# element not in collection
 #
 
 def run():

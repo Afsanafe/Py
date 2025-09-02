@@ -41,6 +41,7 @@ from Learning_Syntax.testingPackages import pears
 from Learning_Syntax import _ArgsKwargs
 from Learning_Syntax import iterables
 from Learning_Syntax import MembershipOperators
+from Learning_Syntax import list_comprehensions
 
 
 
@@ -83,5 +84,6 @@ if __name__ == "__main__":
     # pears.run()
     # _ArgsKwargs.run()
     # iterables.run()
-    MembershipOperators.run()
+    # MembershipOperators.run()
+    list_comprehensions.run()
 
