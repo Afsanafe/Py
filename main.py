@@ -39,6 +39,8 @@ from Learning_Syntax.testingPackages import notApples
 from Learning_Syntax.testingPackages import apples
 from Learning_Syntax.testingPackages import pears 
 from Learning_Syntax import _ArgsKwargs
+from Learning_Syntax import iterables
+from Learning_Syntax import MembershipOperators
 
 
 
@@ -79,10 +81,7 @@ if __name__ == "__main__":
     # apples.run()
     # notApples.run()
     # pears.run()
-    _ArgsKwargs.run()
-
-
-
-
-
+    # _ArgsKwargs.run()
+    # iterables.run()
+    MembershipOperators.run()
 
