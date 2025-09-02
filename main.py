@@ -43,6 +43,8 @@ from Learning_Syntax import iterables
 from Learning_Syntax import MembershipOperators
 from Learning_Syntax import list_comprehensions
 from Learning_Syntax import Match_Case_Statements
+from Learning_Syntax.Module import modules
+from Learning_Syntax.Module import modulePT2
 
 
 
@@ -87,5 +89,7 @@ if __name__ == "__main__":
     # iterables.run()
     # MembershipOperators.run()
     # list_comprehensions.run()
-    Match_Case_Statements.run()
+    # Match_Case_Statements.run()
+    modules.run()
+    modulePT2.run()
 
