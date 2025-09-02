@@ -1,6 +1,14 @@
-# List Comprehensions = A concise way to create lists in Python
+# List Comprehensions = A concise way to create lists in Python using a single line of code!
 #                       Compact and easier to read than traditional loops
 #   Formula to follow = [expression for value in iterable if condition]
+
+# expression → the value to put in the list
+
+# value → variable representing each element in the iterable
+
+# iterable → sequence (list, string, range, etc.) to loop through
+
+# condition (optional) → filter elements
 
 def run():
     doubles = []
