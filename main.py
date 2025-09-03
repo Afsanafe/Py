@@ -46,6 +46,7 @@ from Learning_Syntax import Match_Case_Statements
 from Learning_Syntax.Module import modules
 from Learning_Syntax.Module import modulePT2
 from Learning_Syntax import scopeResolution
+from Learning_Syntax import if__main__demo
 
 
 
@@ -93,5 +94,6 @@ if __name__ == "__main__":
     # Match_Case_Statements.run()
     # modules.run()
     # modulePT2.run()
-    scopeResolution.run()
+    # scopeResolution.run()
+    if__main__demo.run()
 
