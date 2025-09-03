@@ -7,7 +7,7 @@
 # print(__name__) # this will output '__main__'
 
 # if __name__ == '__main__' # this is why we create an if statement dunder name equals the string dunder main
-print(__name__) # __name__ is a special built-in variable in every Python module
+# print(__name__) # __name__ is a special built-in variable in every Python module
 '''
 With the import you will see first script2 run, and it will output
 script2's file name which is just 'script2'
@@ -25,3 +25,15 @@ Things to note is:
     then Python sets __name__ to the modules name which in this case would be
     "Script1"
 '''
+
+def favorite_food(food): # step 6
+    print(f"Your favorite food is {food}") # step 7
+
+def main():  # step 3
+    print("This is script 1") # step 4
+    favorite_food("Pizza")  # step 5
+    print("Goodbye") # step 8
+    print() # step 9
+
+if __name__ == '__main__': # step 1, checks if statement first
+    main()                 # step 2, calls main method
