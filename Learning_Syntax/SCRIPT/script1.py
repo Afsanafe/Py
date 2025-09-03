@@ -1,4 +1,4 @@
-
+# from script2 import *
 
 # print(dir()) # you should see afsanafe@Afsas-MacBook-Pro-2 SCRIPT % python script1.py
 # # ['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
