@@ -14,8 +14,9 @@ def run():
 
     random.shuffle(key) # this mixes up the combination of elements in the list, basically every character in order, has an equivalent character in the shuffle, so if their places match, that character you see in key is what's replacing the character in our string
 
-    print(f"chars: {chars}")
-    print(f"key: {key}")
+    # Hide this to avoid seeing which characters are associated to which in the new shuffled combination
+    # print(f"chars: {chars}")
+    # print(f"key: {key}")
 
         #ENCRYPT
 
@@ -29,3 +30,18 @@ def run():
     
     print(f"original message: {plain_text}")
     print(f"encrypted message: {cipher_text}")
+
+
+        #DECRYPT
+    cipher_text = input("Enter a message to DECRYPT: ")
+    plain_text = ""
+
+
+    for letter in cipher_text: # this will iterate through each character in our string we inputted to 'plain_text'
+        index = key.index(letter) # the index(letter) method returns the position of the first match between our 'plain_text' character and 'chars' character, this position will tell which value to pass in from our 'keys' variable later
+        plain_text += chars[index]
+
+    
+
+    print(f"encrypted message: {cipher_text}")
+    print(f"decrypted message: {plain_text}")
