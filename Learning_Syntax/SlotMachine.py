@@ -100,7 +100,7 @@ def run():
             
 
             if play_again != 'Y':
-                break
+                break # leaves loop
 
     main()
 
