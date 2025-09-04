@@ -50,6 +50,7 @@ from Learning_Syntax import if__main__demo
 from Learning_Syntax import BankingProgram
 from Learning_Syntax import SlotMachine
 from Learning_Syntax import encryptionProgram
+from Learning_Syntax import hangman
 
 
 
@@ -101,5 +102,6 @@ if __name__ == "__main__":
     # if__main__demo.run()
     # BankingProgram.run()
     # SlotMachine.run()
-    encryptionProgram.run()
+    # encryptionProgram.run()
+    hangman.run()
 
