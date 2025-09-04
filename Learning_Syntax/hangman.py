@@ -35,6 +35,17 @@ def run():
         print("=============================")
 
 
+    def display_loss(wrong_guesses, answer, is_running):
+        display_man(wrong_guesses)
+        display_answer(answer)
+        print("You're out of Guesses")
+        print()
+        print("o o")
+        print(".-.")
+        print()
+        print("YOU LOSE")
+        is_running = False
+        return is_running
 
     def display_hint(hint):
         print(" ".join(hint)) # now including a space between each of the literals in the list
@@ -79,15 +90,7 @@ def run():
                 print("Invalid input")
                 wrong_guesses += 1
                 if wrong_guesses >= len(hangman_art) - 1:
-                    display_man(wrong_guesses)
-                    display_answer(answer)
-                    print("You're out of Guesses")
-                    print()
-                    print("o o")
-                    print(".-.")
-                    print()
-                    print("YOU LOSE")
-                    is_running = False
+                    is_running = display_loss(wrong_guesses, answer, is_running)         
                 continue
 
             ## 2. If we already entered that letter, to avoid repeats
@@ -95,15 +98,7 @@ def run():
                 print(f"{guess} was already entered")
                 wrong_guesses += 1
                 if wrong_guesses >= len(hangman_art) - 1:
-                    display_man(wrong_guesses)
-                    display_answer(answer)
-                    print("You're out of Guesses")
-                    print()
-                    print("o o")
-                    print(".-.")
-                    print()
-                    print("YOU LOSE")
-                    is_running = False
+                    is_running = display_loss(wrong_guesses, answer, is_running)         
                 continue
 
             ###
@@ -118,19 +113,7 @@ def run():
             else:
                 wrong_guesses += 1
                 if wrong_guesses >= len(hangman_art) - 1:
-                    display_man(wrong_guesses)
-                    display_answer(answer)
-                    print("You're out of Guesses")
-                    print()
-                    print("o o")
-                    print(".-.")
-                    print()
-                    print("YOU LOSE")
-                    is_running = False
-                    
-                    
-
-
+                    is_running = display_loss(wrong_guesses, answer, is_running)         
 
 
             if "_" not in hint:
