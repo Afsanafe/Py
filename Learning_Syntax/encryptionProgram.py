@@ -17,4 +17,15 @@ def run():
     print(f"chars: {chars}")
     print(f"key: {key}")
 
+        #ENCRYPT
 
+    plain_text = input("Enter a message to ENCRYPT: ")
+    cipher_text = ""
+
+    for letter in plain_text: # this will iterate through each character in our string we inputted to 'plain_text'
+        index = chars.index(letter) # the index(letter) method returns the position of the first match between our 'plain_text' character and 'chars' character, this position will tell which value to pass in from our 'keys' variable later
+        cipher_text += key[index]
+
+    
+    print(f"original message: {plain_text}")
+    print(f"encrypted message: {cipher_text}")
