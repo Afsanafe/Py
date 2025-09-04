@@ -48,6 +48,7 @@ from Learning_Syntax.Module import modulePT2
 from Learning_Syntax import scopeResolution
 from Learning_Syntax import if__main__demo
 from Learning_Syntax import BankingProgram
+from Learning_Syntax import SlotMachine
 
 
 
@@ -97,5 +98,6 @@ if __name__ == "__main__":
     # modulePT2.run()
     # scopeResolution.run()
     # if__main__demo.run()
-    BankingProgram.run()
+    # BankingProgram.run()
+    SlotMachine.run()
 
