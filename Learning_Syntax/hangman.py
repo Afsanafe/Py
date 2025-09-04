@@ -71,10 +71,27 @@ def run():
             
             guess = input("Guess a letter: ").lower()
 
+            ### input validation
+            ## 1. So user can only insert 1 character rather than a whole string
+            if len(guess) != 1 or not guess.isalpha(): # isalpha() only returns true if the value is purely alphabetical letters
+                print("Invalid input")
+                continue
+
+            ## 2. If we already entered that letter, to avoid repeats
+            if guess in guessed_letters:
+                print(f"{guess} was already entered")
+                continue
+
+            guessed_letters.add(guess)
+
+
             if guess in answer: # This logic checks if our guess in our answer, IMPORTANT "in" is a built-in operator in Python that checks membership, its similar to in 'answer.contains(guess)' in Java
                 for i in range(len(answer)): # If the guess is in our answer, it iterates through our word to determine where the letter.
                     if answer[i] == guess: # checking if your guess matches the answer at the exact index we are iterating through.
                         hint[i] = guess # then it replaces the list literal for that specific index with our guess.
+            else:
+                wrong_guesses += 1
+
 
             # display_answer(answer)
 
