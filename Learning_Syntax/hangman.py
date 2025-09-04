@@ -5,7 +5,7 @@ def run():
 
 
     #dictionary of key:()
-    handman_art = {0: ("   ",
+    hangman_art = {0: ("   ",
                     "   ",
                     "   "),
                 1: (" o ",
@@ -27,5 +27,6 @@ def run():
                     "/|\\",
                     "/ \\")}
     
-    print(handman_art[0])
+    for line in hangman_art[0]: # in loops, this dictionary is doing a 'dictionary key lookup', NOT an index, so the [...] operator uses the key stored for an exact match, so whatever the key is what you would specifically insert into the operator
+        print(line)
 
