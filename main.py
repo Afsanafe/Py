@@ -47,6 +47,7 @@ from Learning_Syntax.Module import modules
 from Learning_Syntax.Module import modulePT2
 from Learning_Syntax import scopeResolution
 from Learning_Syntax import if__main__demo
+from Learning_Syntax import BankingProgram
 
 
 
@@ -95,5 +96,6 @@ if __name__ == "__main__":
     # modules.run()
     # modulePT2.run()
     # scopeResolution.run()
-    if__main__demo.run()
+    # if__main__demo.run()
+    BankingProgram.run()
 
