@@ -34,6 +34,8 @@ def run():
             print(line)
         print("=============================")
 
+
+
     def display_hint(hint):
         print(" ".join(hint)) # now including a space between each of the literals in the list
 
@@ -75,14 +77,38 @@ def run():
             ## 1. So user can only insert 1 character rather than a whole string
             if len(guess) != 1 or not guess.isalpha(): # isalpha() only returns true if the value is purely alphabetical letters
                 print("Invalid input")
+                wrong_guesses += 1
+                if wrong_guesses >= len(hangman_art) - 1:
+                    display_man(wrong_guesses)
+                    display_answer(answer)
+                    print("You're out of Guesses")
+                    print()
+                    print("o o")
+                    print(".-.")
+                    print()
+                    print("YOU LOSE")
+                    is_running = False
                 continue
 
             ## 2. If we already entered that letter, to avoid repeats
             if guess in guessed_letters:
                 print(f"{guess} was already entered")
+                wrong_guesses += 1
+                if wrong_guesses >= len(hangman_art) - 1:
+                    display_man(wrong_guesses)
+                    display_answer(answer)
+                    print("You're out of Guesses")
+                    print()
+                    print("o o")
+                    print(".-.")
+                    print()
+                    print("YOU LOSE")
+                    is_running = False
                 continue
 
-            guessed_letters.add(guess)
+            ###
+
+            guessed_letters.add(guess) # modifying the set by adding letters to it from guess input
 
 
             if guess in answer: # This logic checks if our guess in our answer, IMPORTANT "in" is a built-in operator in Python that checks membership, its similar to in 'answer.contains(guess)' in Java
@@ -91,13 +117,29 @@ def run():
                         hint[i] = guess # then it replaces the list literal for that specific index with our guess.
             else:
                 wrong_guesses += 1
+                if wrong_guesses >= len(hangman_art) - 1:
+                    display_man(wrong_guesses)
+                    display_answer(answer)
+                    print("You're out of Guesses")
+                    print()
+                    print("o o")
+                    print(".-.")
+                    print()
+                    print("YOU LOSE")
+                    is_running = False
+                    
+                    
 
 
-            # display_answer(answer)
 
+
+            if "_" not in hint:
+                display_man(wrong_guesses)
+                print("YOU WIN!")
+                is_running = False
 
     main()
 
-    if __name__ == '__main__':
-        run()
+if __name__ == '__main__':
+    run()
 
