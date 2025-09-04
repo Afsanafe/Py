@@ -49,6 +49,7 @@ from Learning_Syntax import scopeResolution
 from Learning_Syntax import if__main__demo
 from Learning_Syntax import BankingProgram
 from Learning_Syntax import SlotMachine
+from Learning_Syntax import encryptionProgram
 
 
 
@@ -99,5 +100,6 @@ if __name__ == "__main__":
     # scopeResolution.run()
     # if__main__demo.run()
     # BankingProgram.run()
-    SlotMachine.run()
+    # SlotMachine.run()
+    encryptionProgram.run()
 
