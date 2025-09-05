@@ -32,7 +32,7 @@ from Learning_Syntax import dice
 # from Learning_Syntax import functions
 # from Learning_Syntax import defaultArguments
 # from Learning_Syntax import keywordArguments
-# Importing multiple files in the same folder in one line:
+### Importing multiple files in the same folder in one line:
 from Learning_Syntax import functions, defaultArguments, keywordArguments
 from Learning_Syntax.testingPackages import oranges
 from Learning_Syntax.testingPackages import notApples
@@ -53,6 +53,7 @@ from Learning_Syntax import encryptionProgram
 from Learning_Syntax.hangman_game import hangman
 from Learning_Syntax.OOP import pyObjectOrientedProgramming
 from Learning_Syntax.OOP import classVariables
+from Learning_Syntax.OOP import inheritance
 
 
 
@@ -107,5 +108,6 @@ if __name__ == "__main__":
     # encryptionProgram.run()
     # hangman.run()
     # pyObjectOrientedProgramming.run()
-    classVariables.run()
+    # classVariables.run()
+    inheritance.run()
 
