@@ -50,7 +50,7 @@ from Learning_Syntax import if__main__demo
 from Learning_Syntax import BankingProgram
 from Learning_Syntax import SlotMachine
 from Learning_Syntax import encryptionProgram
-from Learning_Syntax import hangman
+from Learning_Syntax.hangman_game import hangman
 
 
 
