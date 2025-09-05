@@ -51,6 +51,7 @@ from Learning_Syntax import BankingProgram
 from Learning_Syntax import SlotMachine
 from Learning_Syntax import encryptionProgram
 from Learning_Syntax.hangman_game import hangman
+from Learning_Syntax.OOP import pyObjectOrientedProgramming
 
 
 
@@ -103,5 +104,6 @@ if __name__ == "__main__":
     # BankingProgram.run()
     # SlotMachine.run()
     # encryptionProgram.run()
-    hangman.run()
+    # hangman.run()
+    pyObjectOrientedProgramming.run()
 
