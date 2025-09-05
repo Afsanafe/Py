@@ -52,6 +52,7 @@ from Learning_Syntax import SlotMachine
 from Learning_Syntax import encryptionProgram
 from Learning_Syntax.hangman_game import hangman
 from Learning_Syntax.OOP import pyObjectOrientedProgramming
+from Learning_Syntax.OOP import classVariables
 
 
 
@@ -105,5 +106,6 @@ if __name__ == "__main__":
     # SlotMachine.run()
     # encryptionProgram.run()
     # hangman.run()
-    pyObjectOrientedProgramming.run()
+    # pyObjectOrientedProgramming.run()
+    classVariables.run()
 
