@@ -7,6 +7,7 @@
 # You can put the classes outside run() so the top-level classes can be imported from other modules and unit tests
 
 from .car import Car
+# learn how to do absolute from the package root imports, vs the current relative import
 
 def run():
 
