@@ -1,9 +1,8 @@
 # Hangman in Python
 import random
+from .wordsList import words
 
 def run():
-    words = ("apple", "orange", "banana", "coconut", "pineapple") # Tuple
-
 
     #dictionary of key:()
     hangman_art = {0: ("   ",
