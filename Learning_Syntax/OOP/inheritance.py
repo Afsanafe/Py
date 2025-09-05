@@ -14,13 +14,16 @@ class Animal:
         print(f"{self.name} is sleeping")
 
 class Dog(Animal): # it will inherit all the attributes and methods from its parent class which is "Animal"
-    pass
+    def speak(self):
+        print("WOOF!")
 
 class Cat(Animal): # it will inherit all the attributes and methods from its parent class which is "Animal"
-    pass
+    def speak(self):
+        print("Meow!")
 
 class Mouse(Animal): # it will inherit all the attributes and methods from its parent class which is "Animal"
-    pass
+    def speak(self):
+        print("SQUEEK!")
 
 def run():
     dog = Dog("Scooby")
@@ -30,14 +33,17 @@ def run():
     print(dog.name)
     print(dog.is_alive)
     dog.eat()
+    dog.speak()
     print()
     
     print(cat.name)
     print(cat.is_alive)
     cat.eat()
+    cat.speak()
     print()
     
     print(mouse.name)
     print(mouse.is_alive)
     mouse.eat()
+    mouse.speak()
     print()
