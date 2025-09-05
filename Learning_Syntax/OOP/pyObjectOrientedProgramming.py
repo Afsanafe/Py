@@ -19,6 +19,8 @@ def run():
     print(car1.color)
     print(car1.for_sale)
     print()
+    car1.drive()
+    car1.stop()     
 
     car2 = Car("Corvette", 2025, "red", True)
 
@@ -26,6 +28,12 @@ def run():
     print(car2.year)
     print(car2.color)
     print(car2.for_sale)
+    car2.drive()
+    car2.stop()
+
+    print()
+    car1.describe()
+    car2.describe()
 
 
     
