@@ -5,17 +5,8 @@
 
 # Also for our logic where all our definitions are going inside of a run() function
 # You can put the classes outside run() so the top-level classes can be imported from other modules and unit tests
-class Car:
-    def __init__(self, model, year, color, for_sale): # this is our constructure method , dunder and initialize, we need this method to create objects, and similar to functions
-                                                        # also the 'self' instance, is a convention for the first parameter of an instance method,
-                                                        # you could name it anything but *always use self*
-                                                        # if you don't include you WILL get a type error
-                                                        # So: use self to read/write instance state and call other instance methods; it’s Python’s explicit way of saying “this method operates on this object.”
-        self.model = model
-        self.year = year
-        self.color = color
-        self.for_sale = for_sale
 
+from .car import Car
 
 def run():
 
