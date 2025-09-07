@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eve"
+version = "0.1.0"
+description = "Eve CLI"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "click>=8.1",
+]
+
+# This creates the `eve` command that calls eve/cli.py:cli()
+[project.scripts]
+eve = "eve.cli:cli"
+
+#[tool.setuptools]
+# Tell setuptools to discover packages from src/
+#package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+# If you need to include non-Python files inside packages, turn this on:
+# [tool.setuptools.package-data]
+# eve = ["data/*.txt"]   # example
