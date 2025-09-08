@@ -2,9 +2,13 @@
 
 ### Install package
 ```
+pip install -e .
+```
+or (these are the same commands)
+```
 pip install --editable .
 ```
-The --editable option/flag omits the need to constantly uninstall and install the CLI for any updates to the ```cli()``` function
+The --editable/-e option/flag omits the need to constantly uninstall and install the CLI for any updates to the ```cli()``` function
 
 ### (Optional) Uninstall if need (Already have eve downloaded)
 ```

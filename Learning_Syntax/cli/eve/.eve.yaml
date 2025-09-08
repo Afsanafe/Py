@@ -1,0 +1,6 @@
+greet:
+  default_name: Afsa
+  default_shout: false
+add:
+  default_a: 3
+  default_b: 4
