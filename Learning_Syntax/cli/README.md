@@ -17,7 +17,7 @@ pip uninstall eve
 
 ### Run Eve
 ```
-eve
+eve greet
 ```
 expected output:
 ```
@@ -28,9 +28,22 @@ Hello, world!
 Now with the adjustment there's a new --name option/flag, so you can replace the default case of 'world', with your or any name.
 run the command:
 ```
-eve --name Afsa
+eve greet --name Afsa
 ```
 expected output:
 ```
 Hello, Afsa!
+```
+
+### New commands:
+```
+eve --config eve/.eve.yaml greet  
+```
+
+```
+eve greet --name "ChatGPT" --no-shout
+```
+
+```
+eve add --a 10 --b 4
 ```
